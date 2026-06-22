@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap');
 
 #root {
-    background: url('./assets/unitygrid.jpg');
+    background: url('./assets/alpine-village.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -10,14 +10,14 @@
     background-color: var(--secondary-color);
     font-family: Nunito Sans, Verdana, sans-serif;
     height: 100vh;
-    --main-color: rgb(217, 29, 242);
-    --secondary-color: rgb(3, 1, 64);
+    --main-color: rgb(45, 90, 55);
+    --secondary-color: rgb(20, 40, 25);
     --primary: var(--main-color);
-    --primary-hover: rgb(111, 28, 166);
-    --primary-focus: rgb(217, 29, 242);
+    --primary-hover: rgb(60, 120, 70);
+    --primary-focus: rgb(45, 90, 55);
     --secondary: var(--secondary-color);
-    --secondary-hover: rgb(4, 66, 191);
-    --secondary-focus: rgb(111, 28, 166);
+    --secondary-hover: rgb(30, 60, 35);
+    --secondary-focus: rgb(20, 40, 25);
     --h1-color: white;
     --h2-color: white;
     --h3-color: white;
