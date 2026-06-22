@@ -1,36 +1,30 @@
 import React, { useState, useEffect } from 'react'
-import { getLocationById } from '../services/LocationsAPI'
-import { getEventsByLocation } from '../services/EventsAPI'
+import { getAllEvents } from '../services/EventsAPI'
 import Event from '../components/Event'
 import '../css/LocationEvents.css'
 
-const LocationEvents = ({ locationId }) => {
-  const [location, setLocation] = useState({})
+const Events = () => {
   const [events, setEvents] = useState([])
 
   useEffect(() => {
     (async () => {
       try {
-        const locationData = await getLocationById(locationId)
-        setLocation(locationData)
-
-        const eventsData = await getEventsByLocation(locationId)
+        const eventsData = await getAllEvents()
         setEvents(eventsData)
       } catch (error) {
-        console.error('Error fetching location events:', error)
+        console.error('Error fetching events:', error)
       }
     })()
-  }, [locationId])
+  }, [])
 
   return (
     <div className='location-events'>
       <header>
         <div className='location-info'>
-          <h2>{location.name}</h2>
-          <p>{location.description}</p>
+          <h2>All Events</h2>
+          <p>Explore everything happening in Alpine Village</p>
         </div>
       </header>
-
       <main>
         {events && events.length > 0 ? (
           events.map((event) => (
@@ -44,11 +38,11 @@ const LocationEvents = ({ locationId }) => {
             />
           ))
         ) : (
-          <h2>No events scheduled at this location yet!</h2>
+          <h2>No events found!</h2>
         )}
       </main>
     </div>
   )
 }
 
-export default LocationEvents
+export default Events

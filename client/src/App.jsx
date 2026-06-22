@@ -12,20 +12,20 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: '/echolounge',
-      element: <LocationEvents index={1} />
+      path: '/locations/1',
+      element: <LocationEvents locationId={1} />
     },
     {
-      path: '/houseofblues',
-      element: <LocationEvents index={2} />
+      path: '/locations/2',
+      element: <LocationEvents locationId={2} />
     },
     {
-      path: '/pavilion',
-      element: <LocationEvents index={3} />
+      path: '/locations/3',
+      element: <LocationEvents locationId={3} />
     },
     {
-      path: '/americanairlines',
-      element: <LocationEvents index={4} />
+      path: '/locations/4',
+      element: <LocationEvents locationId={4} />
     },
     {
       path: '/events',
@@ -35,16 +35,13 @@ const App = () => {
 
   return (
     <div className='app'>
-
       <header className='main-header'>
-        <h1>UnityGrid Plaza</h1>
-
+        <h1>🏔️ Alpine Village</h1>
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>
           <Link to='/events' role='button'>Events</Link>
         </div>
       </header>
-
       <main>
         {element}
       </main>
