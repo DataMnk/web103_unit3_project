@@ -38,6 +38,9 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 <img src='https://imgur.com/a/ZB7keIC' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://imgur.com/a/ZB7keIC
+<img width="1179" height="987" alt="alpine-village" src="https://github.com/user-attachments/assets/ee50cdf6-c979-4ac2-b966-a9d7ca1ff330" />
+
 
 GIF created with ScreenToGif
 
